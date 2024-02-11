@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Contact</title>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+    </nav>
+    <h1>Contact Us</h1>
+  </header>
+  <main>
+    <section id="contact-form">
+      <h2>Send Us a Message</h2>
+      <form action="mailto:ng4138436@gmail.com" method="post" enctype="text/plain">
+        <label for="name"><b>Name:</b></label><br><br>
+        <input type="text" id="name" name="name" required><br>
+        <label for="email"><b>Email:</b></label><br><br>
+        <input type="email" id="email" name="email" required><br>
+        <label for="message"><b>Message</b><br><br>
+
+          <textarea id="message" name="message" rows="4" cols="50" required></textarea><br>
+          <input type="submit" value="Send">
+      </form>
+    </section>
+    <section id="contact-info">
+      <h2>Our Location</h2>
+      <p>k-959</p>
+      <p>Sanjay nagar, Ghaziabad</p>
+      <p>Phone: (+91) 8447455248</p>
+      <p>Email: <a href="mailto:ng4138436@gmail.com">ng4138436@gmail.com</a></p>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2023 My Website. All rights reserved.</p>
+  </footer>
+  <style>
+    body {
+      margin: 0;
+      font-family: sans-serif;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px;
+      background-color: #eee;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2em;
+    }
+
+    nav ul {
+      display: flex;
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav li {
+      margin-left: 20px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: black;
+    }
+
+    .active {
+      font-weight: bold;
+    }
+
+    #contact-form {
+      padding: 50px;
+      text-align: center;
+      background-color: #fff;
+      
+
+    }
+
+    #contact-info {
+      padding: 50px;
+      text-align: center;
+      background-color: #eee;
+    }
+
+    footer {
+      padding: 20px;
+      background-color: #eee;
+      text-align: center;
+    }
+  </style>
+</body>
+
+</html>
